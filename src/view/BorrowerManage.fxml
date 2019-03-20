@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BorrowerManageController">
+   <children>
+      <Button layoutX="414.0" layoutY="402.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <Button layoutX="113.0" layoutY="402.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <TextField fx:id="ssnTextField" layoutX="243.0" layoutY="92.0" />
+      <TextField fx:id="nameTextField" layoutX="243.0" layoutY="164.0" />
+      <TextField fx:id="addressTextField" layoutX="243.0" layoutY="237.0" />
+      <Text layoutX="170.0" layoutY="113.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SSN" />
+      <Text layoutX="170.0" layoutY="185.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name" />
+      <Text layoutX="170.0" layoutY="258.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Address" />
+      <Text layoutX="170.0" layoutY="329.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phone" />
+      <TextField fx:id="phoneTextField" layoutX="243.0" layoutY="308.0" />
+   </children>
+</AnchorPane>

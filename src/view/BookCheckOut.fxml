@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookCheckOutController">
+   <children>
+      <TableView fx:id="bookTable" layoutX="108.0" layoutY="85.0" prefHeight="331.0" prefWidth="384.0">
+        <columns>
+          <TableColumn fx:id="isbnColumn" prefWidth="75.0" text="ISBN" />
+          <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title" />
+          <TableColumn fx:id="authorsColumn" prefWidth="75.0" text="Authors" />
+          <TableColumn fx:id="availabilityColumn" prefWidth="75.0" text="Availability" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="409.0" layoutY="426.0" mnemonicParsing="false" onAction="#checkOut" text="Checkout" />
+      <Button layoutX="108.0" layoutY="426.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Text layoutX="122.0" layoutY="57.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Card_No" />
+      <TextField fx:id="cardNumberTextField" layoutX="207.0" layoutY="36.0" />
+   </children>
+</AnchorPane>

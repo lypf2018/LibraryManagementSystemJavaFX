@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SearchController">
+   <children>
+      <Text layoutX="232.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library" wrappingWidth="136.83154296875">
+         <font>
+            <Font size="45.0" />
+         </font>
+      </Text>
+      <TextField fx:id="searchTextField" layoutX="97.0" layoutY="235.0" prefHeight="31.0" prefWidth="406.0" />
+      <Button layoutX="220.0" layoutY="292.0" mnemonicParsing="false" onAction="#search" text="Search" />
+      <Button layoutX="304.0" layoutY="292.0" mnemonicParsing="false" onAction="#checkIn" text="Check in" />
+      <Button layoutX="512.0" layoutY="14.0" mnemonicParsing="false" onAction="#register" text="Register" />
+      <Button layoutX="22.0" layoutY="14.0" mnemonicParsing="false" onAction="#manageFines" text="Manage Fines " />
+   </children>
+</AnchorPane>

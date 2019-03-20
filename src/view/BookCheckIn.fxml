@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.BookCheckInController">
+   <children>
+      <TableView fx:id="loanTable" layoutX="108.0" layoutY="85.0" prefHeight="331.0" prefWidth="384.0">
+        <columns>
+          <TableColumn fx:id="isbnColumn" prefWidth="75.0" text="Book_ID" />
+          <TableColumn fx:id="titleColumn" prefWidth="75.0" text="Title" />
+          <TableColumn fx:id="cardIdColumn" prefWidth="75.0" text="Card_No" />
+          <TableColumn fx:id="borrowerNameColumn" prefWidth="75.0" text="Borrower_Name" />
+          <TableColumn fx:id="dateOutColumn" prefWidth="75.0" text="Date_Out" />
+          <TableColumn fx:id="dueDateColumn" prefWidth="75.0" text="Due_Date" />
+          <TableColumn fx:id="dateInColumn" prefWidth="75.0" text="Date_In" />
+        </columns>
+         <columnResizePolicy>
+            <TableView fx:constant="CONSTRAINED_RESIZE_POLICY" />
+         </columnResizePolicy>
+      </TableView>
+      <Button layoutX="415.0" layoutY="426.0" mnemonicParsing="false" onAction="#checkIn" text="Check In" />
+      <Button layoutX="108.0" layoutY="426.0" mnemonicParsing="false" onAction="#search" text="Search" />
+   </children>
+</AnchorPane>
